@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #010101;
+  font-family: "Ubuntu", sans-serif;
+  color: #FFFFFF;
+}
+
+section {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  }
+
+.one {
+  margin-top: 0px;
+}
+
+.titulo-video {
+  font-size: 75px
+}
+
+.parrafo-video {
+  font-size: 25px
+}
+
+.size-pr {
+  max-width: 510px;
+  max-height: 510px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 90px;
+  background-color: hsl(0, 0%, 10%);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo i {
+  color: #454b4e;
+  font-size: 22px;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #999999;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #999999;
+  padding: 8px 16px;
+}
+
+.menu-links a:hover {
+  color: white;
+}
+
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #999999;
+  border-radius: 10px;
+  border: 2px solid #838282;
+  transition: 0.2s;
+}
+
+.log-in:hover {
+  background-color: #454b4e;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.tit-home {
+  margin-bottom: 50px;
+}
+
+.btn-home {
+  margin-top: 50px;
+}
+
+.box{
+  border: 5px solid #f5f5f5;
+  background: linear-gradient(to top right,#fff 10%,#000 100%);
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,.07);
+  overflow: hidden;
+  position: relative;
+}
+
+.box:before{
+  content: "";
+  width: 50%;
+  height: 75%;
+  border-top: 208px solid rgba(7,0,2,.3);
+  border-left: 140px solid rgba(249, 245, 117, 0.8);
+  border-bottom: 188px solid transparent;
+  border-right: 160px solid transparent;
+  position: absolute;
+  top: 0;
+  left: -230px;
+  z-index: 1;
+  transition: all .4s ease-in-out;
+}
+
+.box:hover:before{
+  border-top: 325px solid rgba(249, 245, 117, 0.8);
+  border-left: 422px solid rgba(249, 245, 117, 0.8);
+  border-bottom: 218px solid transparent;
+  border-right: 160px solid transparent;
+  transform: rotate3d(0,0,1,52deg) scale3d(1,1,1);
+  top: 103px;
+  left: -350px;
+}
+
+.box img{
+  width: 100%;
+  height: auto;
+  transform: scale(1,1);
+  transition: all .3s ease-in-out;
+}
+
+.box:hover img{
+  opacity: .7;
+  transform: scale(1.1,1.1);
+}
+
+.box .box-content{
+  color: #fff;
+  background-color: rgba(249, 245, 117, 0.8);
+  width: 60%;
+  padding: 10px 10px;
+  transform: scale(0);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all .5s ease-in-out;
+}
+
+.box:hover .box-content{ transform: scale(1); }
+.box .title{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.box .post{
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  display: block;
+}
+
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.box .icon li{
+  margin: 0 3px 0 0;
+  display: inline-block; 
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.box:hover .icon li{ opacity: 1; }
+.box:hover .icon li:nth-child(1){ transition-delay: .2s; }
+.box:hover .icon li:nth-child(2){ transition-delay: .3s; }
+.box .icon li a{
+  color: #f04a7e99;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  height: 30px;
+  width: 30px;
+  border: 2px dotted transparent;
+  border-radius: 50%;
+  display: block;
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+
+.box .icon li a:hover{
+  color: #f44178;
+  background:#fff;
+  border-color: #f44178;
+  transform: rotate(360deg);
+}
+
+.carousel-indicators {
+  margin-bottom: -50px;
+}
+
+@media only screen and (max-width:990px){
+  .box{ margin: 0 0 30px; }
+}
+
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* CSS FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 10%);
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  z-index: 999; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #999999;
+    margin-left: 25px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 8px 13px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    color: #999999;
+}
+
+.footer-content ul.social-icons {
+  display: flex;
+  gap: 10px; 
+}
+
+.footer-content ul.social-icons li {
+  width: 60px;
+  height: 60px; 
+  overflow: hidden;
+}
+
+.footer-content ul.social-icons li img {
+  width: 100%; 
+  height: auto; 
+}
+
