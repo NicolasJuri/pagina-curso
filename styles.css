@@ -13,6 +13,9 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #FFFFFF;
 }
+main{
+  height: 100vh;
+}
 
 section {
   margin-bottom: 100px;
@@ -313,7 +316,7 @@ footer {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  z-index: 999; /* Asegura que el footer esté por encima de otros elementos */
+  z-index: 999; /*Asegura que el footer esté por encima de otros elementos */
 }
 
 
@@ -398,4 +401,35 @@ footer {
 .bar-pintas {
   color: #999999;
   font-weight: bold;
+}
+
+/* :::::::::::::SECTION ABOUT US::::::::::::::: */
+.perfiles{
+  margin: 50px auto;
+  display: flex;
+  width: 700px;
+  height: 400px;
+  background-color: rgb(209, 49, 49);
+}
+
+.overlay-text-About-Us{
+  text-align: center;
+}
+
+.parrafo-About-Us{
+  margin: 25px;
+}
+
+.perfiles img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.perfiles img:hover {
+  width: 350px;
+  opacity: 1;
+  filter: contrast(120%);
 }
