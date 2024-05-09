@@ -376,26 +376,8 @@ footer {
 }
 
 /* CSS MENU */
-.container-menu {
-  display: flex;
-  padding-bottom: 10%;
-}
-
-.carousel-menu {
-  width: 70%; /* Ajusta el tamaño del carrusel / imagen según tus necesidades */
-  margin-right: 20px;
-}
-
-.carousel-slide img {
-  max-width: 70%;
-  height: auto;
-  margin-left: 15%;
+.carousel-item img {
   border: solid #999999 3px;
-}
-
-.descriptions {
-  width: 30%;
-  margin-right: 10%;
 }
 
 .bar-pintas {
@@ -417,7 +399,7 @@ footer {
 }
 
 .parrafo-About-Us{
-  margin: 25px;
+  margin: 2% 10% 0 10%;
 }
 
 .perfiles img{
