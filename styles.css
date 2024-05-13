@@ -397,37 +397,57 @@ footer {
 
 /* :::::::::::::SECTION ABOUT US::::::::::::::: */
 
-#container-About-Us{
+#container-About-Us {
   margin: 2% 10% 0 10%;
+  text-align: center;
 }
 
-.perfiles{
+.perfiles {
   margin: 50px auto;
   display: flex;
+  position: relative;
   width: 700px;
   height: 400px;
   background-color: rgb(209, 49, 49);
 }
 
-.overlay-text-About-Us{
-  text-align: center;
-}
-
-.parrafo-About-Us{
-  margin: 2%;
-  
-}
-
-.perfiles img{
+.perfiles img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
   transition: .5s ease;
+  position: relative;
 }
 
 .perfiles img:hover {
   width: 350px;
   opacity: 1;
   filter: contrast(120%);
+}
+
+.perfiles img:hover + .nombre-perfil {
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.nombre-perfil {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 97%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 75%;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  z-index: 1;
+} 
+.nombre-perfil h4 p{
+  color: white;
+  font-size: 20px;
 }
