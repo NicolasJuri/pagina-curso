@@ -304,6 +304,10 @@ button {
   }
 }
 
+.step {
+  display: none;
+}
+
 /* CSS FOOTER */
 footer {
 
