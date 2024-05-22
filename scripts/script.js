@@ -42,9 +42,7 @@ function nextStep() {
 // Función para validar un paso
 function validateStep(stepIndex) {
     const step = steps[stepIndex];
-    console.log(step);
     const inputs = step.querySelectorAll('input[required]');
-    console.log(inputs);
     let isValid = true;
 
     // Verificar campos de entrada
@@ -52,7 +50,6 @@ function validateStep(stepIndex) {
         if (!input.value.trim()) {
             isValid = false;
             input.classList.add('is-invalid');
-            console.log('Campo de entrada vacío');
         } else {
             input.classList.remove('is-invalid');
         }
@@ -101,3 +98,17 @@ function validateStep(stepIndex) {
     });
   }); 
 
+
+//Menu Hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementById('menu-btn');
+  const menuLinks = document.getElementById('menu-links');
+
+  if (menuBtn && menuLinks) {
+      menuBtn.addEventListener('click', function() {
+          menuLinks.classList.toggle('active');
+      });
+  } else {
+      console.error('El botón del menú o los enlaces del menú no se encontraron.');
+  }
+});

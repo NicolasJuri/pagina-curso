@@ -6,7 +6,12 @@
   box-sizing: border-box;
 }
 
-body {
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: #010101;
@@ -14,6 +19,15 @@ body {
   color: #FFFFFF;
   height: 100vh;
 }
+
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 section {
   margin-bottom: 100px;
@@ -97,6 +111,16 @@ button {
   padding-inline: 24px;
 }
 
+.link-reservas {
+  font-weight: 500;
+  color: #999999;
+  padding: 8px 16px;
+}
+
+.link-reservas:hover {
+  color: #FFFFFF;
+}
+
 .menu-links a {
   font-weight: 500;
   color: #999999;
@@ -107,26 +131,16 @@ button {
   color: white;
 }
 
-.log-in {
-  font-weight: 500;
-  padding: 12px 22px;
-  background-color: transparent;
-  color: #999999;
-  border-radius: 10px;
-  border: 2px solid #838282;
-  transition: 0.2s;
-}
-
-.log-in:hover {
-  background-color: #454b4e;
-  color: white;
-}
 
 .menu-btn {
   font-size: 32px;
   color: white;
   display: none;
   cursor: pointer;
+}
+
+.menu.active {
+  display: flex;
 }
 
 .video-section {
@@ -319,16 +333,6 @@ footer {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 
-  /* FOOTER ANTERIOR */
-  /* position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: hsl(0, 0%, 10%);
-  padding: 20px 0;
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  z-index: 999; Asegura que el footer esté por encima de otros elementos */
 }
 
 
@@ -377,8 +381,8 @@ footer {
 }
 
 .footer-content ul.social-icons li {
-  width: 60px;
-  height: 60px; 
+  width: 50px;
+  height: 50px; 
   overflow: hidden;
 }
 
@@ -454,4 +458,38 @@ footer {
 .nombre-perfil h4 p{
   color: white;
   font-size: 20px;
+}
+
+/* Mobile Navbar Styles */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
 }

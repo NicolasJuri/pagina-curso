@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
         <!-- Enlace al CSS de Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../styles.css" rel="stylesheet">
+        <link href="./styles/styles.css" rel="stylesheet">
         <!-- Enlace de Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Enlace a fuentes de google -->
@@ -20,21 +20,23 @@
     </head>
     <body>
         <!-- Navbar -->
+        <!-- Navbar -->
         <nav class="navbar">
             <div class="logo">
                 <div class="logo-text">
-                    <img src="../img/favicon.ico" alt="Logo Bar Pintas">
-                    <a href="../index.html">Bar Pintas</a>
+                    <img src="./img/favicon.ico" alt="Logo Bar Pintas">
+                    <a href="/index.html">Bar Pintas</a>
                 </div>
             </div>
             <div class="menu">
                 <div class="menu-links">
-                    <a href="../index.html">Home</a>
-                    <a href="./menu.html">Menú</a>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a>
-                    <a href="./reservas.html">Reservas</a>
+                    <a href="index.html">Home</a>
+                    <a href="/menu.html">Menú</a>
+                    <a href="/sobre-nosotros.html">Sobre nosotros</a>
                 </div>
-                <button class="log-in">Log In</button>
+
+                <a class="link-reservas" href="/reservas.html">Reservas</a>
+
             </div>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -48,10 +50,11 @@
                 <div class="texto about us">
                     <div class="overlay-text-About-Us">
                         <h2 class="titulo-About-Us">SOBRE NOSOTROS</h2>
-                        <p class="parrafo-About-Us">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad voluptas vero beatae iste voluptate saepe ut velit consequatur sed. Quas ipsam amet ea. Molestiae, exercitationem laborum. Beatae, odio eum.
-                        Minima, ad. Architecto nulla hic minus quidem aliquid odio aliquam nam deserunt inventore vero eum ea facilis, consequuntur necessitatibus maxime aperiam adipisci itaque distinctio expedita corrupti repellat. Illum, hic corporis!
-                        Sapiente dolore ad quam cumque porro corrupti nemo, rerum fugiat aspernatur quis nobis sunt explicabo unde assumenda tempore eligendi aliquam molestiae voluptate expedita magnam. Magni atque neque consequuntur tenetur eligendi.
-                        Sapiente consectetur qui fuga dolor? Ipsum similique accusamus, corrupti aliquam velit architecto, molestiae a exercitationem distinctio minima, fugiat sunt. Accusamus, sint. Facilis illum quasi quas sapiente consequatur incidunt sunt eum?
+                        <p class="parrafo-About-Us">Hace algunos años, tres amigos sin nada más que sueños en sus bolsillos, Eze, Facu y Nico, decidieron perseguir su sueño de abrir un restaurante juntos. A pesar de comenzar desde cero, con escasos recursos y sin experiencia empresarial previa, estaban decididos a convertirlo en realidad. Con esfuerzo y dedicación inquebrantables, transformaron un modesto local en tres exitosas sucursales ubicadas en distintos puntos del país.
+
+                            Su historia es mucho más que un simple relato de logros empresariales. Es un testimonio vibrante de amistad, donde cada desafío fortaleció sus lazos y cada obstáculo los impulsó a seguir adelante. Juntos, superaron las adversidades con valentía y determinación, demostrando que no hay límites para aquellos que creen en sus sueños y están dispuestos a trabajar incansablemente por ellos.
+                            
+                            Hoy, cuando miran hacia atrás, no solo ven el éxito de sus negocios, sino también el crecimiento personal que han experimentado en el camino. Cada sonrisa compartida, cada obstáculo superado y cada logro alcanzado les recuerda el poder de la amistad y la importancia de nunca rendirse ante la adversidad.
                         </p>
                     </div>
                 </div>
@@ -61,17 +64,19 @@
                     <!-- perfil Ezequiel -->
                     <img src="../img/img About Us/zakAble.png" alt="Perfil Ezequiel"><span class="nombre-perfil"><h4>Ezequiel</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto quisquam commodi quam aut, minus illum natus magni reprehenderit at dolores pariatur obcaecati est nihil?</p></span>
                     
-                    <!-- perfil Facundo  -->
-                    <img src="../img/img About Us/therockfacu.jpg" alt="Perfil Facundo">
-                    <span class="nombre-perfil"><h4>Facundo</h4> <p class="parrafo-historia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque maiores tenetur fugiat eveniet quisquam, dignissimos quas a voluptates explicabo, consequatur at? Perspiciatis, officia voluptas!</p></span>
-        
-                    <!-- perfil Nacu  -->
-                    <img src="../img/img About Us/zakAble.png" alt="Perfil Nacu">
-                    <span class="nombre-perfil"><h4>Nacu</h4> <p class="parrafo-historia">t dolores neque nisi? Voluptate nulla ea quaerat amet excepturi eius minus voluptatem, cum voluptatibus.</p></span> 
-        
-                    <!-- perfil Nicolas  -->
-                    <img src="../img/img About Us/zakAble.png" alt="Perfil Nicolás">
-                    <span class="nombre-perfil"><h4>Nicolás</h4> <p class="parrafo-historia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque maiores accusantium ratione beatae officiis earum, perferendis est. Ex dolores perferendis omnis sed soluta esse saepe.</p></span>
+                <!-- Perfil de Facundo -->
+            <img src="./img/facu-sobreNosotros.png" alt="Perfil de Facundo">
+            <span class="nombre-perfil">
+                <h4>Facundo Robles</h4>
+                <p class="parrafo-historia">Soy Facu, tengo 29 años y soy de San Miguel de Tucumán. Actualmente me encuentro a cargo del área de marketing y posicionamiento SEO de todas las sucursales de Pintas.</p>
+            </span>                        
+
+            <!-- Perfil de Nicolás -->
+            <img src="./img/nico-sobreNosotros.png" alt="Perfil de Nicolás">
+            <span class="nombre-perfil">
+                <h4>Nicolás Juri</h4>
+                <p class="parrafo-historia">Soy Nico, de Paraná, Entre Ríos. Actualmente me encuentro a cargo de la logística, control de stock y finanzas de todas las sucursales de Pintas.</p>
+            </span>
                 </div>
 
                 <div class="texto about us">
@@ -102,13 +107,13 @@
                     </ul>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 por Bar Pintas. Desarrollado por Ezequiel, Facundo Robles, Nacu?, Nicolas Juri.</p>
+                    <p>&copy; 2024 por Bar Pintas. Desarrollado por Ezequiel Morales, Facundo Robles y Nicolas Juri.</p>
                 </div>
             </footer>
         </section>
             <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="./scripts/script.js"></script>
         </body>
     </html>
