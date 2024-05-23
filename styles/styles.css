@@ -53,11 +53,13 @@ p {
 }
 
 .titulo-video {
-  font-size: 75px
+  font-size: 75px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .parrafo-video {
-  font-size: 25px
+  font-size: 25px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .size-pr {
@@ -157,7 +159,7 @@ button {
 }
 
 .video-container video {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -302,6 +304,10 @@ button {
 
 .carousel-indicators {
   margin-bottom: -50px;
+}
+
+.titulo-About-Us {
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width:990px){
@@ -462,34 +468,8 @@ footer {
 
 /* Mobile Navbar Styles */
 @media only screen and (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
 
-    .navbar-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-        color: white;
-    }
-
-    .mobile-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        padding: 20px;
-    }
-
-    .mobile-menu a {
-        color: white;
-        text-decoration: none;
-        margin-bottom: 10px;
-    }
-
-    .menu-btn {
-        display: block;
-        cursor: pointer;
+    .btn-home {
+      margin: 2px;
     }
 }
