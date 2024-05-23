@@ -493,3 +493,17 @@ footer {
         cursor: pointer;
     }
 }
+
+/*-- Css Modal --*/
+
+.modal-content {
+  background-color: #999999;
+}
+
+.modal-button {
+  color: #999999;
+}
+
+.modal-button:hover {
+  color: white;
+}
