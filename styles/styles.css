@@ -418,6 +418,7 @@ footer {
 
 .perfiles {
   margin: 50px auto;
+  margin-bottom: 12%;
   display: flex;
   position: relative;
   width: 700px;
