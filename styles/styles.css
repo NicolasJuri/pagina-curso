@@ -466,6 +466,37 @@ footer {
   font-size: 20px;
 }
 
+
+
+/* iframes de las sucursales */
+#iframeSucursal{
+  margin: 0 5% 0 5%;
+  padding: 2%;
+  text-align: center;
+  /* background-color: #422da2; */
+  }
+  
+  /* H2 */
+.tituloSucursal h2{
+    padding: 0 0 0 15px;
+    margin-bottom: 35px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  
+  
+  /* Mapas de las sucursales */
+  
+  /* .Localizacion{
+    background-color: rgb(171, 21, 74);
+  } */
+ .mapa1, .mapa2, .mapa3 {
+    margin: 70px 0 ;
+    padding: 15px;
+    /* background-color: #454b4e; */
+  }
+
+
 /* Mobile Navbar Styles */
 @media only screen and (max-width: 768px) {
 
