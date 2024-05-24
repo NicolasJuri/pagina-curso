@@ -399,7 +399,8 @@ footer {
   margin-top: 9px;
 }
 
-/* CSS MENU */
+/* ::::::::::::: SECTION MENU ::::::::::::::: */
+
 .carousel-item img {
   border: solid #999999 3px;
 }
@@ -409,7 +410,7 @@ footer {
   font-weight: bold;
 }
 
-/* :::::::::::::SECTION ABOUT US::::::::::::::: */
+/* ::::::::::::: SECTION ABOUT US ::::::::::::::: */
 
 #container-About-Us {
   margin: 2% 10% 0 10%;
@@ -474,7 +475,6 @@ footer {
   margin: 0 5% 0 5%;
   padding: 2%;
   text-align: center;
-  /* background-color: #422da2; */
   }
   
   /* H2 */
@@ -487,24 +487,10 @@ footer {
   
   
   /* Mapas de las sucursales */
-  
-  /* .Localizacion{
-    background-color: rgb(171, 21, 74);
-  } */
  .mapa1, .mapa2, .mapa3 {
     margin: 70px 0 ;
     padding: 15px;
-    /* background-color: #454b4e; */
   }
-
-
-/* Mobile Navbar Styles */
-@media only screen and (max-width: 768px) {
-
-    .btn-home {
-      margin: 2px;
-    }
-}
 
 /*-- Css Modal --*/
 
@@ -518,4 +504,61 @@ footer {
 
 .modal-button:hover {
   color: white;
+}
+
+/* Mostrar botón menú hamburguesa en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      background-color: hsl(0, 0%, 10%);
+  }
+  .menu.active {
+      display: flex;
+      position: absolute;
+      top: 90px; /* Ajusta según la altura de tu navbar */
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+  }
+  .menu-links {
+      flex-direction: column;
+      width: 100%;
+      border-right: none;
+      border-top: 1px solid #999999;
+      padding-top: 16px;
+      z-index: 1000;
+  }
+  .menu-links a {
+      padding: 16px;
+      text-align: center;
+      width: 100%;
+  }
+  .link-reservas {
+      display: block;
+      padding: 16px;
+      text-align: center;
+      width: 100%;
+  }
+  .menu-btn {
+      display: block;
+      z-index: 1000; /* Asegura que el botón esté encima del menú desplegado */
+  }
+
+  .btn-home {
+    margin: 2px;
+  }
+
+  .titulo-video {
+    font-size: 24px;
+  }
+
+  .parrafo-video {
+    font-size: 18px;
+  }
 }

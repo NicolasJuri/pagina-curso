@@ -100,7 +100,7 @@ function validateStep(stepIndex) {
 
 
 //Menu Hamburguesa
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   const menuBtn = document.getElementById('menu-btn');
   const menuLinks = document.getElementById('menu-links');
 
@@ -111,4 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
       console.error('El botón del menú o los enlaces del menú no se encontraron.');
   }
-});
+});*/
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+
+        menuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
