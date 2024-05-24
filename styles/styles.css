@@ -561,4 +561,8 @@ footer {
   .parrafo-video {
     font-size: 18px;
   }
+
+  .text-start {
+    margin-top: 26px;
+  }
 }
