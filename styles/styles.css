@@ -413,59 +413,32 @@ footer {
 /* ::::::::::::: SECTION ABOUT US ::::::::::::::: */
 
 #container-About-Us {
-  margin: 2% 10% 0 10%;
+  margin: 2% 3% 0 3%;
   text-align: center;
 }
 
-.perfiles {
-  margin: 50px auto;
-  margin-bottom: 12%;
+.row{
   display: flex;
-  position: relative;
-  width: 700px;
-  height: 400px;
-  background-color: rgb(209, 49, 49);
+  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.perfiles img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
-  position: relative;
-}
-
-.perfiles img:hover {
-  width: 350px;
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-.perfiles img:hover + .nombre-perfil {
-  opacity: 1;
-  border-radius: 15px;
-}
-
-.nombre-perfil {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 97%;
-  transform: translateX(-50%);
-  display: inline-block;
-  width: 75%;
-  height: auto;
+.contenedorPerfil{
+  width: 300px;
+  height: 250px;
   padding: 15px;
-  border-radius: 5px;
-  background-color: #3c3c3c;
-  opacity: 0;
-  transition: opacity 0.9s ease;
-  z-index: 1;
-} 
-.nombre-perfil h4 p{
-  color: white;
-  font-size: 20px;
+  border-radius: 15px;
+  margin: 45px;
+}
+.contenedorPerfil img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: double gray 5px;
+
+}
+.contenedorPerfil h4{
+  margin-top: 5px;
 }
 
 
@@ -490,9 +463,12 @@ footer {
  .mapa1, .mapa2, .mapa3 {
     margin: 70px 0 ;
     padding: 15px;
+    width: 500px;
+    height: 500px;
   }
 
-/*-- Css Modal --*/
+
+  /* ::::::::::::: CSS MODAL ::::::::::::::: */
 
 .modal-content {
   background-color: #999999;
@@ -506,7 +482,8 @@ footer {
   color: white;
 }
 
-/* Mostrar botón menú hamburguesa en dispositivos móviles */
+
+/* ::::::::::::: MOSTRAR BOTÓN MEÚ HAMB. EN DISPOSITIVOS MÓVILES ::::::::::::::: */
 @media (max-width: 768px) {
   .menu {
       display: none;
