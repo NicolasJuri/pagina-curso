@@ -417,33 +417,26 @@ footer {
   text-align: center;
 }
 
-.row{
-  display: flex;
-  justify-content: space-evenly;
-  justify-content: center;
+
+.Perfil img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.contenedorPerfil{
-  width: 300px;
-  height: 250px;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 45px;
+.Perfil h5, p{
+  margin: 25px ;
+  padding: 10px;
 }
-.contenedorPerfil img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: double gray 5px;
-
-}
-.contenedorPerfil h4{
-  margin-top: 5px;
-}
-
 
 
 /* iframes de las sucursales */
+
+
+.col{
+  margin: 50px;
+}
 #iframeSucursal{
   margin: 0 5% 0 5%;
   padding: 2%;
