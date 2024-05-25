@@ -46,6 +46,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+  color: #FFFF;
   }
 
 .one {
@@ -59,6 +60,7 @@ p {
 
 .parrafo-video {
   font-size: 25px;
+  color: #FFFF;
   text-shadow: 2px 2px 4px black;
 }
 
@@ -310,20 +312,6 @@ button {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width:990px){
-  .box{ margin: 0 0 30px; }
-}
-
-@media (max-width: 53rem) {
-  .menu {
-    display: none;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-}
-
 .step {
   display: none;
 }
@@ -430,6 +418,9 @@ footer {
   padding: 10px;
 }
 
+.text-start {
+  color: #000;
+}
 
 /* iframes de las sucursales */
 
@@ -476,8 +467,245 @@ iframe{
 }
 
 
-/* ::::::::::::: MOSTRAR BOTÓN MEÚ HAMB. EN DISPOSITIVOS MÓVILES ::::::::::::::: */
+.container {
+  margin-top: 100px;
+}
+
+.container .row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  padding: 0;
+  margin: 0 !important;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 280px;
+  max-height: 340px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.card .card-image {
+  width: 100%;
+  max-height: 340px;
+}
+
+.card .card-image img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.card .card-content {
+  position: absolute;
+  bottom: -180px;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  min-height: 140px;
+  width: 100%;
+  transition: bottom .4s ease-in;
+  box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card-content {
+  bottom: 0px;
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+  transform: translateY(10px);
+  font-family: "Ubuntu", sans-serif;
+  opacity: 1;
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: 0.8s;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition-delay: 0.2s;
+}
+
+.card .card-content h5 {
+  transition: 0.5s;
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.card .card-content .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+
+.card .card-content .social-icons li {
+  margin: 10px;
+  transition: 0.5s;
+  transition-delay: calc(0.15s * var(--i));
+  transform: translateY(50px);
+}
+
+
+.card:hover .card-content .social-icons li {
+  transform: translateY(20px);
+}
+
+.card .card-content .social-icons li a {
+  color: black;
+}
+
+.card .card-content .social-icons li a span {
+  font-size: 1.3rem;
+}
+
+/* ::::::::::::: SECTION RESERVAS ::::::::::::::: */
+
+/* Centrar la sección de contenido */
+section.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-bottom: 150px;
+}
+
+.titulo-reservas {
+  color: #000;
+  font-size: "Ubuntu", sans-serif;
+}
+
+/* Tarjeta del formulario */
+.card-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Tarjeta cuerpo */
+.card-body-form {
+  padding: 2rem;
+}
+
+/* Título de cada paso */
+.step h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Inputs del formulario */
+.step .form-control,
+.step .form-select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Botones del formulario */
+.step .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* Botón siguiente */
+.step .next-btn {
+  background-color: #6c757d;
+  border: none;
+}
+
+.step .next-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Botón anterior */
+.step .prev-btn {
+  background-color: #6c757d;
+  border: none;
+}
+
+.step .prev-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Botón confirmar */
+.step .btn-success {
+  background-color: #28a745; 
+  border: none;
+}
+
+.step .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Inputs inválidos */
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Ocultar pasos por defecto */
+.step {
+  display: none;
+}
+
+/* Mostrar paso actual */
+.step.active {
+  display: block;
+}
+
+
+/* ::::::::::::: COMIENZO MEDIAQUERYS::::::::::::::: */
+
+@media(max-width: 991.5px) {
+  .container {
+      margin-top: 20px;
+  }
+
+  .container .row .col-lg-4 {
+      margin: 20px 0px;
+  }
+}
+
 @media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .size-pr {
+    display: block;
+    margin: 10px 10px;
+}
+
+  .menu-btn {
+    display: block;
+  }
+  .menu.active {
+    margin-top: -5px;
+  }
+
+  .imagen-index {
+    margin-top: 15px;
+  }
+
   .menu {
       display: none;
       flex-direction: column;

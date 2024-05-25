@@ -17,30 +17,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <!-- Enlace a Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar">
-            <div class="logo">
-                <div class="logo-text">
-                    <img src="./img/favicon.ico" alt="Logo Bar Pintas">
-                    <a href="index.html">Bar Pintas</a>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu-links">
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menú</a>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a>
-                </div>
+          <div class="logo">
+              <div class="logo-text">
+                  <img src="./img/favicon.ico" alt="Logo Bar Pintas">
+                  <a href="index.html">Bar Pintas</a>
+              </div>
+          </div>
+          <div class="menu">
+              <div class="menu-links">
+                  <a href="index.html">Home</a>
+                  <a href="menu.html">Menú</a>
+                  <a href="sobre-nosotros.html">Sobre nosotros</a>
+              </div>
 
-                <a class="link-reservas" href="reservas.html">Reservas</a>
+              <a class="link-reservas" href="reservas.html">Reservas</a>
 
-            </div>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+          </div>
+          <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+          </div>
+      </nav>
 
         <!-- Main -->
         <main>
@@ -55,222 +57,273 @@
                 </div>
             </section>
 
-            <section id="container-About-Us">
-                <!-- texto principal -->
-                <div class="texto about us">
-                    <div class="overlay-text-About-Us">
-                        <h2 class="titulo-About-Us">NUESTRA HISTORIA</h2>
-                        <p class="parrafo-About-Us">Hace algunos años, tres amigos sin nada más que sueños en sus bolsillos, Eze, Facu y Nico, decidieron perseguir su sueño de abrir un restaurante juntos. A pesar de comenzar desde cero, con escasos recursos y sin experiencia empresarial previa, estaban decididos a convertirlo en realidad. Con esfuerzo y dedicación inquebrantables, transformaron un modesto local en tres exitosas sucursales ubicadas en distintos puntos del país.
-
-                            Su historia es mucho más que un simple relato de logros empresariales. Es un testimonio vibrante de amistad, donde cada desafío fortaleció sus lazos y cada obstáculo los impulsó a seguir adelante. Juntos, superaron las adversidades con valentía y determinación, demostrando que no hay límites para aquellos que creen en sus sueños y están dispuestos a trabajar incansablemente por ellos.
-                            
-                            Hoy, cuando miran hacia atrás, no solo ven el éxito de sus negocios, sino también el crecimiento personal que han experimentado en el camino. Cada sonrisa compartida, cada obstáculo superado y cada logro alcanzado les recuerda el poder de la amistad y la importancia de nunca rendirse ante la adversidad.
-                        </p>
-                    </div>
+            <section>
+              <h2 class="titulo-About-Us text-center">NUESTRA HISTORIA</h2>
+              <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <img src="./img/img-aboutUs.png" alt="creando la primer sucursal" class="img-fluid mb-4">
+                  </div>
+                  <div class="col-md-6">
+                    <p class="parrafo-About-Us"> Hace algunos años, tres amigos sin nada más que sueños en sus bolsillos, Eze, Facu y Nico, decidimos perseguir nuestro sueño de abrir un restaurante juntos. A pesar de comenzar desde cero, con escasos recursos y sin experiencia empresarial previa, estabamos decididos a convertirlo en realidad. Con esfuerzo y dedicación inquebrantables, transformamos un modesto local en tres exitosas sucursales ubicadas en distintos puntos del país. </p>
+                  </div>
                 </div>
-    
+                <div class="row align-items-center">
+                  <div class="col-md-6 order-md-last">
+                    <img src="./img/img-aboutUs2.png" alt="creando la primer sucursal" class="img-fluid mb-4">
+                  </div>
+                  <div class="col-md-6 order-md-first">
+                    <p class="parrafo-About-Us">Nuestro recorrido es mucho más que un simple relato de logros empresariales. Es un testimonio vibrante de amistad, donde cada desafío fortaleció nuestros lazos y cada obstáculo nos impulsó a seguir adelante. Juntos, superamos las adversidades con valentía y determinación, demostrando que no hay límites para aquellos que creen en sus sueños y están dispuestos a trabajar incansablemente por ellos.<br>
+                                        
+                    Hoy, cuando miramos hacia atrás, no solo vemos el éxito de nuestros negocios, sino también el crecimiento personal que hemos experimentado en el camino. Cada sonrisa compartida, cada obstáculo superado y cada logro alcanzado nos recuerda el poder de la amistad y la importancia de nunca rendirse ante la adversidad.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            
             <!-- Perfiles -->
 
-            <section class="Perfil">
-              <div class="card-group">
-                <div class="card">
-                  <img src="img/img About Us/zakAble.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Ezequiel H. Morales</h5>
-                    <p class="card-text">Actualmente me encuentro a cargo del área de marketing y posicionamiento SEO, además estoy a cargo de la logística, control de stock y finanzas de la sucursal <strong>Pintas Chaco </strong></p>
-                  </div>
+            <section>
+              <h2 class="titulo-About-Us text-center">¿QUIENES SOMOS?</h2>
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image">
+                                <img src="./img/img About Us/facu-sobreNosotros.png"
+                                    alt="">
+                            </div>
+                            <div class="card-content d-flex flex-column align-items-center">
+                                <h4 class="pt-2">Facundo Robles</h4>
+        
+                                <ul class="social-icons d-flex justify-content-center">
+                                  <li style="--i:1">
+                                    <p class="text-start">Marketing<br>
+                                      Posicionamiento SEO<br>
+                                    </p>
+                                  </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image">
+                                <img src="./img/img About Us/nico-sobreNosotros.png" style="margin-top: 30px; height: 500px;"
+                                    alt="">
+                            </div>
+                            <div class="card-content d-flex flex-column align-items-center">
+                                <h4 class="pt-2">Nicolas Juri </h4>
+                                <h5></h5>
+        
+                                <ul class="social-icons d-flex justify-content-center">
+                                    <li style="--i:1">
+                                      <p class="text-start">Control de stock<br>
+                                        Finanzas y contabilidad
+                                      </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-0">
+                            <div class="card-image">
+                                <img src="./img/img About Us/zakAble.png"
+                                    alt="">
+                            </div>
+                            <div class="card-content d-flex flex-column align-items-center">
+                                <h4 class="pt-2">Ezequiel Morales</h4>
+        
+                                <ul class="social-icons d-flex justify-content-center">
+                                  <li style="--i:1">
+                                    <p class="text-start">Manejo de personal<br>
+                                      RR.HH.<br>
+                                      
+                                    </p>
+                                  </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
-                <div class="card">
-                  <img src="img/img About Us/facu-sobreNosotros.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Facundo Robles</h5>
-                    <p class="card-text">Soy Facu, tengo 29 años y soy de San Miguel de Tucumán. Actualmente me encuentro a cargo del área de marketing y posicionamiento SEO de las sucursales de Pintas Tucumán y Entre Ríos.</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/img About Us/nico-sobreNosotros.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Nicolás Juri</h5>
-                    <p class="card-text">Soy Nico, de Paraná, Entre Ríos. Actualmente me encuentro a cargo de la logística, control de stock y finanzas de las sucursales de Pintas Tucumán y Entre Ríos.</p>
-                  </div>
-                </div>
-              </div>
+            </div>
             </section>
-
+    
             <section id="sucursales">
-              <div class="tituloSucursal text-center mb-5"> 
-                <h2>Nuestras Sucursales</h2>
+              <div class="tituloSucursal text-center mb-5">
+                <h2 class="titulo-About-Us">Nuestras Sucursales</h2>
               </div>
+            
+              <!-- Sucursal 1 -->
               <div class="container text-center">
-                <div class="row align-items-start">
-                  <div class="col">
+                <div class="row align-items-start mb-4">
+                  <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.2111728889768!2d-58.966039325252815!3d-27.431528815079638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450dad8fbd4bdb%3A0xbf99339e6a6f0625!2sSarmiento%20Shopping!5e0!3m2!1ses-419!2sar!4v1716470489720!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
                   </div>
-                  <div class="col texto">
+                  <div class="col-md-6 texto text-center">
                     <h5>Pintas Resistencia - Chaco</h5>
-                    <p>Dirección: Av. Sarmiento 2610, H3502COM Resistencia, Chaco
-                      Teléfono: 0362 497-7333
-                      Horario: 
-                      Abre 8 a.m. ⋅ Cierra a la 1 a.m.
-                      Provincia: Provincia del Chaco</p>
+                    <p class="card-text"><i class="bi bi-geo-alt"></i> Av. Sarmiento 2610</p>
+                    <p class="card-text"><i class="bi bi-telephone"></i> 3624-251486</p>
+                    <p class="card-text"><i class="bi bi-clock"></i> Martes a Domingo 18:00 - 02:00</p>
                   </div>
                 </div>
               </div>
+            
+              <!-- Sucursal 2 (Tucumán) -->
               <div class="container text-center">
-                <div class="row align-items-start">
-                  <div class="col texto">
+                <div class="row align-items-start mb-4">
+                  <div class="col-md-6 order-2 order-md-1">
                     <h5>Pintas Yerba Buena - Tucumán</h5>
-                    <p>Ubicado en: Howard Johnson Hotel Yerba Buena
-                      Dirección: Av. Aconquija 1136, T4107 Yerba Buena, Tucumán
-                      Teléfono: 0381 15-431-7575
-                      Horario: 
-                      Abre 8 a.m. ⋅ Cierra a la 1 a.m.
-                      </p>
+                    <p class="card-text"><i class="bi bi-geo-alt"></i> Av. Aconquija 1136</p>
+                    <p class="card-text"><i class="bi bi-telephone"></i> 0381-5848392</p>
+                    <p class="card-text"><i class="bi bi-clock"></i> Lunes a Viernes 18:00 - 02:00</p>
                   </div>
-                  <div class="col">
+                  <div class="col-md-6 order-1 order-md-2">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5755678784312!2d-65.26983642528096!3d-26.821639889403325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cdcab3eadeb%3A0xd7757ecff290d4da!2sPortal%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1716478249479!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  
                   </div>
                 </div>
               </div>
+            
+              <!-- Sucursal 3 -->
               <div class="container text-center">
                 <div class="row align-items-start">
-                  <div class="col">
+                  <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7086935.567118893!2d-66.85604620340526!3d-29.852223757773398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b45379e1ff8b55%3A0x61bcaea62d241c4b!2sShopping%20Paso%20del%20Paran%C3%A1!5e0!3m2!1ses-419!2sar!4v1716513068524!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
                   </div>
-                  <div class="col texto">
+                  <div class="col-md-6 texto text-center">
                     <h5>Pintas Paraná - Entre Ríos</h5>
-                    <p>Dirección: Corrientes, San Lorenzo &, Paraná, Entre Ríos
-                      Horario: 
-                      Abre 8 a.m ⋅ Cierra a las 12 a.m.
-                      Provincia: Entre Ríos</p>
+                    <p class="card-text"><i class="bi bi-geo-alt"></i> Av. Corrientes, San Lorenzo</p>
+                    <p class="card-text"><i class="bi bi-telephone"></i> 343 - 4703065</p>
+                    <p class="card-text"><i class="bi bi-clock"></i> Martes a Sábado 18:00 - 02:00</p>
                   </div>
                 </div>
               </div>
             </section>
-        </main>
-
+            
+          </main>
         <!-- Footer -->
         <section>
-            <footer>
-                <div class="footer-content">
-                    <p>Bar Pintas</p>
-                    <ul class="social-icons">
-                        <li><a href="#"><img src="./img/facebook.svg" alt="icono facebook"></a></li>
-                        <li><a href="#"><img src="./img/instagram.svg" alt="icono instagram"></a></li>
-                        <li><a href="#"><img src="./img/whatsapp.svg" alt="icono whatsapp"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2024 por Bar Pintas. Desarrollado por Ezequiel Morales, Facundo Robles y Nicolas Juri.</p>
-                </div>
-                <a href="#" class="modal-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Términos y Condiciones
-                  </a>                
-                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Terminos y Condiciones</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Introducción</h3>
-                          <p>Bienvenidos a la página web de Pintas, 
-                            una franquicia de restaurantes en Argentina con sucursales en Paraná, Entre Ríos; 
-                            San Miguel de Tucumán; y Buenos Aires Capital. Al acceder y utilizar nuestro sitio web, 
-                            usted acepta cumplir con los siguientes términos y condiciones. 
-                            Estos términos se aplican a todos los visitantes, usuarios y clientes de Pintas. 
-                            Si no está de acuerdo con estos términos, por favor no utilice nuestro sitio web.
-                          </p>
-                          <hr>
-                          <h3>Propiedad Intelectual</h3>
-                          <p>Todos los contenidos presentes en este sitio web, incluidos, 
-                            entre otros, textos, gráficos, logotipos, imágenes y software, 
-                            son propiedad de Pintas y están protegidos por las leyes de derechos de autor 
-                            y otras leyes de propiedad intelectual. Usted no puede utilizar, reproducir, distribuir, 
-                            modificar o crear trabajos derivados de cualquiera de los contenidos de este sitio sin el 
-                            consentimiento previo por escrito de Pintas.
-                          </p>
-                          <hr>
-                          <h3>Uso del Sitio Web</h3>
-                          <p>Registro de Usuario: Para acceder a ciertos servicios, 
-                            es posible que se le solicite registrar una cuenta en nuestro sitio web. Usted es 
-                            responsable de mantener la confidencialidad de su cuenta y contraseña y acepta 
-                            notificar a Pintas de inmediato sobre cualquier uso no autorizado de su cuenta.
-                            Conducta del Usuario: Usted acepta utilizar nuestro sitio web solo con fines legales 
-                            y de manera que no infrinja los derechos de otros ni restrinja o inhiba su uso y 
-                            disfrute del sitio.
-                            Exactitud de la Información: Aunque hacemos todo lo posible por garantizar que 
-                            la información en nuestro sitio web sea precisa, completa y actualizada, 
-                            no garantizamos la exactitud ni la integridad de dicha información.                          
-                          </p>
-                          <hr>
-                          <h3>Pedidos y Pagos</h3>
-                          <p>Política de Precios: Los precios de los productos y servicios pueden variar según 
-                            la ubicación de la sucursal. Nos reservamos el derecho de modificar los precios en 
-                            cualquier momento sin previo aviso.
-                            Métodos de Pago: Aceptamos varios métodos de pago, incluidos tarjetas de crédito, 
-                            débito y otros métodos electrónicos. Al realizar una compra, usted garantiza que 
-                            tiene derecho a utilizar el método de pago seleccionado.
-                            Política de Reembolso: Las solicitudes de reembolso se evaluarán caso por caso. 
-                            Para obtener más información, póngase en contacto con la sucursal correspondiente.                          
-                          </p>
-                          <hr>
-                          <h3>Privacidad</h3>
-                          <p>La privacidad de nuestros usuarios es muy importante para nosotros. 
-                            Por favor, revise nuestra Política de Privacidad para entender cómo recopilamos, 
-                            utilizamos y protegemos su información personal.                        
-                          </p>
-                          <hr>
-                          <h3>Enlaces a Sitios de Terceros</h3>
-                          <p>Nuestro sitio web puede contener enlaces a sitios web de terceros. 
-                            Estos enlaces se proporcionan únicamente para su conveniencia. 
-                            Pintas no tiene control sobre el contenido de estos sitios web y 
-                            no asume ninguna responsabilidad por ellos ni por cualquier pérdida o daño 
-                            que pueda surgir de su uso.
-                          </p>
-                          <hr>
-                          <h3>Limitación de Responsabilidad</h3>
-                          <p>En la medida máxima permitida por la ley aplicable, 
-                            Pintas no será responsable de ningún daño directo, indirecto, incidental, 
-                            especial o consecuente que resulte del uso o la imposibilidad de uso de nuestro sitio web, 
-                            incluidos, entre otros, daños por pérdida de beneficios, pérdida de datos u 
-                            otras pérdidas intangibles.
-                          </p>
-                          <hr>
-                          <h3>Modificaciones de los Términos y Condiciones</h3>
-                          <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier 
-                            momento sin previo aviso. Los cambios entrarán en vigor inmediatamente 
-                            después de su publicación en nuestro sitio web. Su uso continuado del sitio 
-                            web después de la publicación de los términos modificados constituirá su 
-                            aceptación de los cambios.
-                          </p>
-                          <hr>
-                          <h3>Contacto</h3>
-                          <p>Si tiene alguna pregunta o comentario sobre estos términos y condiciones, 
-                            por favor póngase en contacto con nosotros a través de nuestra página de contacto.
-                          </p>
-                          <hr>
-                          <h3>Propietarios de la Franquicia</h3>
-                          <p>Pintas es propiedad de Facundo Robles, Ezequiel Morales y Nicolás Juri. 
-                            Agradecemos su confianza en nosotros y esperamos que disfrute de su experiencia 
-                            con nuestros servicios.
-                          </p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
+          <footer>
+              <div class="footer-content">
+                  <p>Bar Pintas</p>
+                  <ul class="social-icons">
+                      <li><a href="#"><img src="./img/facebook.svg" alt="icono facebook"></a></li>
+                      <li><a href="#"><img src="./img/instagram.svg" alt="icono instagram"></a></li>
+                      <li><a href="#"><img src="./img/whatsapp.svg" alt="icono whatsapp"></a></li>
+                  </ul>
+              </div>
+              <div class="footer-bottom">
+                  <p>&copy; 2024 por Bar Pintas. Desarrollado por Ezequiel Morales, Facundo Robles y Nicolas Juri.</p>
+              </div>
+              <a href="#" class="modal-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Términos y Condiciones
+                </a>                
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Terminos y Condiciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h3>Introducción</h3>
+                        <p>Bienvenidos a la página web de Pintas, 
+                          una franquicia de restaurantes en Argentina con sucursales en Paraná, Entre Ríos; 
+                          San Miguel de Tucumán; y Buenos Aires Capital. Al acceder y utilizar nuestro sitio web, 
+                          usted acepta cumplir con los siguientes términos y condiciones. 
+                          Estos términos se aplican a todos los visitantes, usuarios y clientes de Pintas. 
+                          Si no está de acuerdo con estos términos, por favor no utilice nuestro sitio web.
+                        </p>
+                        <hr>
+                        <h3>Propiedad Intelectual</h3>
+                        <p>Todos los contenidos presentes en este sitio web, incluidos, 
+                          entre otros, textos, gráficos, logotipos, imágenes y software, 
+                          son propiedad de Pintas y están protegidos por las leyes de derechos de autor 
+                          y otras leyes de propiedad intelectual. Usted no puede utilizar, reproducir, distribuir, 
+                          modificar o crear trabajos derivados de cualquiera de los contenidos de este sitio sin el 
+                          consentimiento previo por escrito de Pintas.
+                        </p>
+                        <hr>
+                        <h3>Uso del Sitio Web</h3>
+                        <p>Registro de Usuario: Para acceder a ciertos servicios, 
+                          es posible que se le solicite registrar una cuenta en nuestro sitio web. Usted es 
+                          responsable de mantener la confidencialidad de su cuenta y contraseña y acepta 
+                          notificar a Pintas de inmediato sobre cualquier uso no autorizado de su cuenta.
+                          Conducta del Usuario: Usted acepta utilizar nuestro sitio web solo con fines legales 
+                          y de manera que no infrinja los derechos de otros ni restrinja o inhiba su uso y 
+                          disfrute del sitio.
+                          Exactitud de la Información: Aunque hacemos todo lo posible por garantizar que 
+                          la información en nuestro sitio web sea precisa, completa y actualizada, 
+                          no garantizamos la exactitud ni la integridad de dicha información.                          
+                        </p>
+                        <hr>
+                        <h3>Pedidos y Pagos</h3>
+                        <p>Política de Precios: Los precios de los productos y servicios pueden variar según 
+                          la ubicación de la sucursal. Nos reservamos el derecho de modificar los precios en 
+                          cualquier momento sin previo aviso.
+                          Métodos de Pago: Aceptamos varios métodos de pago, incluidos tarjetas de crédito, 
+                          débito y otros métodos electrónicos. Al realizar una compra, usted garantiza que 
+                          tiene derecho a utilizar el método de pago seleccionado.
+                          Política de Reembolso: Las solicitudes de reembolso se evaluarán caso por caso. 
+                          Para obtener más información, póngase en contacto con la sucursal correspondiente.                          
+                        </p>
+                        <hr>
+                        <h3>Privacidad</h3>
+                        <p>La privacidad de nuestros usuarios es muy importante para nosotros. 
+                          Por favor, revise nuestra Política de Privacidad para entender cómo recopilamos, 
+                          utilizamos y protegemos su información personal.                        
+                        </p>
+                        <hr>
+                        <h3>Enlaces a Sitios de Terceros</h3>
+                        <p>Nuestro sitio web puede contener enlaces a sitios web de terceros. 
+                          Estos enlaces se proporcionan únicamente para su conveniencia. 
+                          Pintas no tiene control sobre el contenido de estos sitios web y 
+                          no asume ninguna responsabilidad por ellos ni por cualquier pérdida o daño 
+                          que pueda surgir de su uso.
+                        </p>
+                        <hr>
+                        <h3>Limitación de Responsabilidad</h3>
+                        <p>En la medida máxima permitida por la ley aplicable, 
+                          Pintas no será responsable de ningún daño directo, indirecto, incidental, 
+                          especial o consecuente que resulte del uso o la imposibilidad de uso de nuestro sitio web, 
+                          incluidos, entre otros, daños por pérdida de beneficios, pérdida de datos u 
+                          otras pérdidas intangibles.
+                        </p>
+                        <hr>
+                        <h3>Modificaciones de los Términos y Condiciones</h3>
+                        <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier 
+                          momento sin previo aviso. Los cambios entrarán en vigor inmediatamente 
+                          después de su publicación en nuestro sitio web. Su uso continuado del sitio 
+                          web después de la publicación de los términos modificados constituirá su 
+                          aceptación de los cambios.
+                        </p>
+                        <hr>
+                        <h3>Contacto</h3>
+                        <p>Si tiene alguna pregunta o comentario sobre estos términos y condiciones, 
+                          por favor póngase en contacto con nosotros a través de nuestra página de contacto.
+                        </p>
+                        <hr>
+                        <h3>Propietarios de la Franquicia</h3>
+                        <p>Pintas es propiedad de Facundo Robles, Ezequiel Morales y Nicolás Juri. 
+                          Agradecemos su confianza en nosotros y esperamos que disfrute de su experiencia 
+                          con nuestros servicios.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
                       </div>
                     </div>
                   </div>
-            </footer>
-        </section>
-            <!-- Scripts de Bootstrap -->
+                </div>
+          </footer>
+      </section>
+    <!-- Scripts de Bootstrap y otros -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./scripts/script.js"></script>
-        </body>
-    </html>
+    </body>
+</html>

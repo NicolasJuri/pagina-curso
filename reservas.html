@@ -18,9 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <!-- Navbar: menú de navegación -->
         <!-- Navbar -->
         <nav class="navbar">
           <div class="logo">
@@ -54,72 +55,72 @@
         </div>
     </section>
 
-    <!-- Sección principal del contenido -->
-    <section class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="card mt-5">
-                        <div class="card-body">
-                            <form id="form" class="step-form">
-                                <!-- Paso 1: Información personal -->
-                                <div class="step" id="step-1">
-                                    <h2 class="display-4 mb-5">Completa los datos y recibirás tu confirmación</h2>
-                                    <div class="mb-3 mt-3">
-                                        <input type="text" class="form-control" placeholder="Nombre" required>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <input type="text" class="form-control" placeholder="Apellido" required>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <input type="number" class="form-control" placeholder="Celular" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <button class="btn btn-secondary next-btn">Siguiente</button>
-                                </div>
-                                
-                                <!-- Paso 2: Selección de sucursal, fecha y hora -->
-                                <div class="step" id="step-2">
-                                    <h2 class="display-3 mb-5">Selecciona la sucursal, fecha y hora</h2>
-                                    <div class="mb-3 mt-3">
-                                        <label for="sucursal">Selecciona la sucursal:</label>
-                                        <select id="sucursal" class="form-select" required>
-                                            <option value="" disabled selected>Selecciona una sucursal</option>
-                                            <option value="Pintas, Entre Ríos">Pintas, Entre Ríos</option>
-                                            <option value="Pintas, Tucumán">Pintas, Tucumán</option>
-                                            <option value="Pintas, Buenos Aires">Pintas, Buenos Aires</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <label for="fecha">Selecciona una fecha:</label>
-                                        <input type="date" id="fecha" class="form-control" required>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <label for="hora">Selecciona una hora:</label>
-                                        <input type="time" id="hora" class="form-control" required>
-                                    </div>
-                                    <button class="btn btn-secondary prev-btn">Anterior</button>
-                                    <button class="btn btn-secondary next-btn">Siguiente</button>
-                                </div>
-                                
-                                <!-- Paso 3: Confirmación de la reserva -->
-                                <div class="step" id="step-3">
-                                    <h2 class="display-3 mb-5">Confirma tu reserva</h2>
-                                    <p>¡Gracias por tu reserva!</p>
-                                    <p>Confirma tus datos:</p>
-                                    <div id="confirmation"></div>
-                                    <button class="btn btn-secondary prev-btn">Anterior</button>
-                                    <button type="submit" class="btn btn-success">Confirmar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+<!-- Sección principal del contenido -->
+<section class="content">
+  <div class="cont-form">
+    <div class="row-form">
+      <div class="col-md-8 offset-md-2">
+        <div class="card-form mt-5">
+          <div class="card-body-form">
+            <form id="form" class="step-form">
+              <!-- Paso 1: Información personal -->
+              <div class="step active" id="step-1">
+                <h2 class="display-4 mb-5 titulo-reservas">Completa los datos y recibirás tu confirmación</h2>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" placeholder="Nombre" required>
                 </div>
-            </div>
-        </div>  
-    </section>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" placeholder="Apellido" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="number" class="form-control" placeholder="Celular" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <button class="btn btn-secondary next-btn">Siguiente</button>
+              </div>
+              
+              <!-- Paso 2: Selección de sucursal, fecha y hora -->
+              <div class="step" id="step-2">
+                <h2 class="display-3 mb-5 titulo-reservas">Selecciona la sucursal, fecha y hora</h2>
+                <div class="mb-3 mt-3">
+                  <label for="sucursal">Selecciona la sucursal:</label>
+                  <select id="sucursal" class="form-select" required>
+                    <option value="" disabled selected>Selecciona una sucursal</option>
+                    <option value="Pintas, Entre Ríos">Pintas, Entre Ríos</option>
+                    <option value="Pintas, Tucumán">Pintas, Tucumán</option>
+                    <option value="Pintas, Buenos Aires">Pintas, Buenos Aires</option>
+                  </select>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="fecha">Selecciona una fecha:</label>
+                  <input type="date" id="fecha" class="form-control" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="hora">Selecciona una hora:</label>
+                  <input type="time" id="hora" class="form-control" required>
+                </div>
+                <button class="btn btn-secondary prev-btn">Anterior</button>
+                <button class="btn btn-secondary next-btn">Siguiente</button>
+              </div>
+              
+              <!-- Paso 3: Confirmación de la reserva -->
+              <div class="step" id="step-3">
+                <h2 class="display-3 mb-5 titulo-reservas">Confirma tu reserva</h2>
+                <p>Confirma tus datos:</p>
+                <div id="confirmation"></div>
+                <button class="btn btn-secondary prev-btn">Anterior</button>
+                <button type="submit" class="btn btn-success">Confirmar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
     
     <!-- Footer: pie de página -->
     <footer class="footer">
