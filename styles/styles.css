@@ -108,6 +108,10 @@ button {
   gap: 32px;
 }
 
+.btn-nav {
+  background-color: transparent;
+}
+
 .menu-links {
   display: flex;
   gap: 24px;
@@ -120,6 +124,7 @@ button {
   color: #999999;
   padding: 8px 16px;
 }
+
 
 .link-reservas:hover {
   color: #FFFFFF;
